@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenTech Solutions | Products</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="logo">GreenTech Solutions</div>
+
+            <button class="menu-toggle" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button id="contrastToggle" class="contrast-btn">High Contrast</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Products and Services</h1>
+            <p>
+                Explore GreenTech’s eco-friendly technology solutions for businesses and individuals.
+                Use the search bar or category filter to find a solution faster.
+            </p>
+        </section>
+
+        <section class="filter-section" aria-label="Product search and filter tools">
+            <div>
+                <label for="productSearch">Search Products:</label>
+                <input type="text" id="productSearch" placeholder="Search by keyword...">
+            </div>
+
+            <div>
+                <label for="categoryFilter">Filter by Category:</label>
+                <select id="categoryFilter">
+                    <option value="all">All</option>
+                    <option value="energy">Energy</option>
+                    <option value="recycling">Recycling</option>
+                    <option value="software">Software</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="product-grid" id="productGrid">
+            <article class="product-card" data-category="energy">
+                <img src="../images/energy-device.png" alt="Energy-efficient smart device for businesses">
+                <h2>Energy-Efficient Devices</h2>
+                <p>
+                    Smart devices that help companies monitor and reduce energy usage in offices and workspaces.
+                    These tools are designed to help businesses lower utility costs while supporting sustainability goals.
+                </p>
+            </article>
+
+            <article class="product-card" data-category="recycling">
+                <img src="../images/recycling-system.png" alt="Smart recycling system with sorted waste containers">
+                <h2>Smart Recycling Systems</h2>
+                <p>
+                    Recycling tools that make sorting waste easier and encourage better sustainability habits.
+                    These systems help offices separate materials more clearly and reduce unnecessary waste.
+                </p>
+            </article>
+
+            <article class="product-card" data-category="software">
+                <img src="../images/carbon-software.png" alt="Carbon tracking software dashboard on a computer screen">
+                <h2>Carbon Tracking Software</h2>
+                <p>
+                    Software that tracks emissions, creates reports, and helps businesses set sustainability goals.
+                    It gives companies a simple way to understand their environmental impact.
+                </p>
+            </article>
+        </section>
+
+        <p id="noResults" class="no-results" role="status" aria-live="polite">
+            No products found. Try a different search.
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GreenTech Solutions. All rights reserved.</p>
+    </footer>
+
+    <script src="../javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenTech Solutions | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="logo">GreenTech Solutions</div>
+
+            <button class="menu-toggle" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="html/about.html">About</a></li>
+                <li><a href="html/products.html">Products</a></li>
+                <li><a href="html/resources.html">Resources</a></li>
+                <li><a href="html/contact.html">Contact</a></li>
+            </ul>
+
+            <button id="contrastToggle" class="contrast-btn">High Contrast</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Smart Technology for a Greener Future</h1>
+
+                <p>
+                    GreenTech Solutions helps small and medium-sized businesses reduce their carbon footprint
+                    through energy-efficient devices, smart recycling systems, and carbon tracking software.
+                </p>
+
+                <a href="html/products.html" class="button">Explore Our Solutions</a>
+            </div>
+
+            <img src="images/greentech-hero.png" alt="Solar panels used for clean renewable energy">
+        </section>
+
+        <section class="intro">
+            <h2>Our Mission</h2>
+
+            <p>
+                Our mission is to make sustainability easier through technology. We help businesses understand
+                their environmental impact and take real steps toward cleaner, smarter operations.
+            </p>
+        </section>
+
+        <section class="cards-section">
+            <h2>Key Solutions</h2>
+
+            <div class="card-container">
+                <article class="card">
+                    <h3>Energy-Efficient Devices</h3>
+                    <p>
+                        Reduce energy waste with smart devices designed to lower utility costs and improve
+                        daily business operations.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Smart Recycling Systems</h3>
+                    <p>
+                        Use intelligent recycling tools to make sorting waste easier, faster, and more accurate
+                        for offices and workspaces.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Carbon Tracking Software</h3>
+                    <p>
+                        Track emissions, review sustainability data, and create reports that support cleaner
+                        business decisions.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="why-section">
+            <h2>Why Choose GreenTech?</h2>
+
+            <ul>
+                <li>Eco-friendly technology designed for small and medium-sized businesses.</li>
+                <li>Simple tools that help companies understand and reduce their environmental impact.</li>
+                <li>Accessible, modern, and user-friendly solutions for sustainable growth.</li>
+            </ul>
+        </section>
+
+        <section class="impact-table-section">
+            <h2>GreenTech Impact Goals</h2>
+
+            <table>
+                <caption>Examples of how GreenTech Solutions supports sustainable business goals</caption>
+                <thead>
+                    <tr>
+                        <th>Solution</th>
+                        <th>Business Benefit</th>
+                        <th>Sustainability Impact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Energy-Efficient Devices</td>
+                        <td>Lower energy costs</td>
+                        <td>Reduced electricity waste</td>
+                    </tr>
+                    <tr>
+                        <td>Smart Recycling Systems</td>
+                        <td>Better waste organization</td>
+                        <td>Improved recycling habits</td>
+                    </tr>
+                    <tr>
+                        <td>Carbon Tracking Software</td>
+                        <td>Clear emissions reports</td>
+                        <td>Better carbon footprint awareness</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="newsletter">
+            <h2>Join Our Sustainability Newsletter</h2>
+
+            <p>
+                Get simple sustainability tips, product updates, and eco-friendly technology news.
+            </p>
+
+            <form id="newsletterForm">
+                <label for="newsletterEmail">Email Address</label>
+
+                <input 
+                    type="email" 
+                    id="newsletterEmail" 
+                    name="newsletterEmail" 
+                    placeholder="example@email.com"
+                    required
+                >
+
+                <button type="submit">Sign Up</button>
+
+                <p id="newsletterMessage" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GreenTech Solutions. All rights reserved.</p>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
