@@ -185,7 +185,6 @@ form,
     margin-top: 0.8rem;
 }
 
-/* Table styles */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -229,9 +228,36 @@ th {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.resource-card a {
+.resource-card h2,
+.product-card h2 {
+    margin-bottom: 0.5rem;
+}
+
+.read-more-btn {
+    margin-top: 0.8rem;
+    background-color: transparent;
     color: #1f4d2b;
+    border: 2px solid #1f4d2b;
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    background-color: #1f4d2b;
+    color: #ffffff;
+}
+
+.extra-info {
+    display: none;
+    margin-top: 0.8rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid #d9ead3;
+}
+
+.extra-info.show {
+    display: block;
 }
 
 .timeline-item {
@@ -345,6 +371,17 @@ footer {
     color: #000000;
 }
 
+.high-contrast .read-more-btn {
+    color: #ffff66;
+    border-color: #ffff66;
+    background-color: transparent;
+}
+
+.high-contrast .read-more-btn:hover {
+    background-color: #ffff66;
+    color: #000000;
+}
+
 .high-contrast table {
     background-color: #111111;
     color: #ffffff;
@@ -359,6 +396,7 @@ footer {
     border-color: #ffffff;
 }
 
+/* Mobile Responsiveness */
 @media (max-width: 900px) {
     .hero {
         flex-direction: column;

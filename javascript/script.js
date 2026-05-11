@@ -127,3 +127,22 @@ if (productSearch && categoryFilter) {
     productSearch.addEventListener("input", filterProducts);
     categoryFilter.addEventListener("change", filterProducts);
 }
+
+// Read More buttons for resource cards
+const readMoreButtons = document.querySelectorAll(".read-more-btn");
+
+readMoreButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+        const extraInfo = button.nextElementSibling;
+
+        if (extraInfo) {
+            extraInfo.classList.toggle("show");
+
+            if (extraInfo.classList.contains("show")) {
+                button.textContent = "Show Less";
+            } else {
+                button.textContent = "Read More";
+            }
+        }
+    });
+});
